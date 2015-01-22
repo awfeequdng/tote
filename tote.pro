@@ -37,4 +37,5 @@ FORMS    += tote.ui \
     client.ui \
     login.ui
 
-RESOURCES +=
+RESOURCES += \
+    rsctote.qrc

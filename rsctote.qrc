@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/add.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-down.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-left.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-left-2.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-right.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-right-2.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/arrow-up.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/back-forth.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/bandwidth.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/calculator.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/calendar.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/cart.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/caution.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/check.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/database.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/delete.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/doc.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/doc-export.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/doc-import.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/doc-new.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/edit.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/full_screen.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/help.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/history.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/home.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/key.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/lens.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/lock.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/mail.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/refresh.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/see.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/stop.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/user.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/user-add.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/user-delete.png</file>
+        <file>E:/WORKS/horus-icons-all/horus-icons/32x32/users.png</file>
+    </qresource>
+</RCC>
