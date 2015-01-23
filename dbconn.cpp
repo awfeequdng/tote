@@ -18,11 +18,13 @@ int DBConn::combinedMode = 4;
 DBConn::DBConn(QObject *parent) :
     QObject(parent)
 {
-    _db.setHostName("localhost");
+    //_db.setHostName("localhost");
+    _db.setHostName("192.168.1.254");
     _db.setUserName("postgres");
     _db.setPassword("120.125");
     _db.setPort(5432);
     _db.setDatabaseName("tote");
+
 }
 
 

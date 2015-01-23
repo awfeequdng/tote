@@ -20,7 +20,13 @@ SOURCES += main.cpp\
     dbconn.cpp \
     brandmodel.cpp \
     utils.cpp \
-    login.cpp
+    login.cpp \
+    countrymodel.cpp \
+    geography.cpp \
+    image.cpp \
+    citymodel.cpp \
+    departamentmodel.cpp \
+    neighborhoodmodel.cpp
 
 HEADERS  += tote.h \
     brand.h \
@@ -29,13 +35,21 @@ HEADERS  += tote.h \
     dbconn.h \
     brandmodel.h \
     utils.h \
-    login.h
+    login.h \
+    countrymodel.h \
+    geography.h \
+    image.h \
+    citymodel.h \
+    departamentmodel.h \
+    neighborhoodmodel.h
 
 FORMS    += tote.ui \
     brand.ui \
     user.ui \
     client.ui \
-    login.ui
+    login.ui \
+    geography.ui \
+    image.ui
 
 RESOURCES += \
     rsctote.qrc

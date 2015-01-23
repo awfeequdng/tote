@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "geography.h"
+#include "image.h"
+
 
 namespace Ui {
 class tote;
@@ -23,6 +26,7 @@ private slots:
     void on_actionListBrands_triggered();
     void on_actionListItems_triggered();
     void on_actionNewBuy_triggered();
+    void on_actionGeography_triggered();
 };
 
 #endif // TOTE_H

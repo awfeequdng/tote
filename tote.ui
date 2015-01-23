@@ -23,7 +23,7 @@
      <x>0</x>
      <y>0</y>
      <width>899</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTOTE">
@@ -32,7 +32,7 @@
     </property>
     <addaction name="actionListUser"/>
     <addaction name="actionConfiguration"/>
-    <addaction name="actionGeografia"/>
+    <addaction name="actionGeography"/>
    </widget>
    <widget class="QMenu" name="menuInventario">
     <property name="title">
@@ -118,7 +118,7 @@
     <string>Configuracion</string>
    </property>
   </action>
-  <action name="actionGeografia">
+  <action name="actionGeography">
    <property name="text">
     <string>Geografia</string>
    </property>

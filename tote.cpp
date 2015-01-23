@@ -41,4 +41,15 @@ void tote::on_actionListItems_triggered()
 void tote::on_actionNewBuy_triggered()
 {
     qDebug() << "Se clico en nueva compra";
+    Image *img = new Image;
+
+    img->show();
+
+}
+
+void tote::on_actionGeography_triggered()
+{
+    Geography *geographyW = new Geography(this);
+    geographyW->show();
+
 }
