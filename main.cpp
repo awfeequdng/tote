@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
     }
     //a.setStyle("fusion");
 
-    w.show();
+//    w.show();
+    w.showMaximized();
+
     return a.exec();
 }

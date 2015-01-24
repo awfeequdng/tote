@@ -5,6 +5,7 @@
 #include <QItemDelegate>
 
 #include "countrymodel.h"
+#include "geographymodel.h"
 
 namespace Ui {
 class Geography;
@@ -22,6 +23,7 @@ private:
     Ui::Geography *ui;
 
     CountryModel *_countryMod;
+    GeographyModel *_geographyMod;
 };
 
 #endif // GEOGRAPHY_H

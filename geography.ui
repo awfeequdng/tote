@@ -6,22 +6,55 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1261</width>
+    <width>1127</width>
     <height>614</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Geografia</string>
   </property>
-  <widget class="QTableView" name="tvCountry">
+  <widget class="QTabWidget" name="tabGeography">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>40</y>
-     <width>771</width>
-     <height>531</height>
+     <x>5</x>
+     <y>10</y>
+     <width>1121</width>
+     <height>601</height>
     </rect>
    </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>Paises</string>
+    </attribute>
+    <widget class="QTableView" name="tvCountry">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>621</width>
+       <height>521</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Departamentos - Ciudades - Barrios</string>
+    </attribute>
+    <widget class="QTableView" name="tvGrography">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>1051</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources/>

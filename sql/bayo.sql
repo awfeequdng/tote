@@ -2,6 +2,10 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.2.7
+-- Dumped by pg_dump version 9.4.0
+-- Started on 2015-01-24 16:56:53
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -34,6 +38,7 @@ DROP SEQUENCE bayo.city_cityid_seq;
 DROP TABLE bayo.city;
 DROP SCHEMA bayo;
 --
+-- TOC entry 7 (class 2615 OID 16387)
 -- Name: bayo; Type: SCHEMA; Schema: -; Owner: postgres
 --
 
@@ -49,6 +54,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- TOC entry 173 (class 1259 OID 16406)
 -- Name: city; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -64,6 +70,7 @@ CREATE TABLE city (
 ALTER TABLE city OWNER TO postgres;
 
 --
+-- TOC entry 172 (class 1259 OID 16404)
 -- Name: city_cityid_seq; Type: SEQUENCE; Schema: bayo; Owner: postgres
 --
 
@@ -78,6 +85,8 @@ CREATE SEQUENCE city_cityid_seq
 ALTER TABLE city_cityid_seq OWNER TO postgres;
 
 --
+-- TOC entry 2899 (class 0 OID 0)
+-- Dependencies: 172
 -- Name: city_cityid_seq; Type: SEQUENCE OWNED BY; Schema: bayo; Owner: postgres
 --
 
@@ -85,6 +94,7 @@ ALTER SEQUENCE city_cityid_seq OWNED BY city.cityid;
 
 
 --
+-- TOC entry 176 (class 1259 OID 16440)
 -- Name: client; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -95,6 +105,7 @@ CREATE TABLE client (
 ALTER TABLE client OWNER TO postgres;
 
 --
+-- TOC entry 169 (class 1259 OID 16388)
 -- Name: country; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -112,6 +123,8 @@ CREATE TABLE country (
 ALTER TABLE country OWNER TO postgres;
 
 --
+-- TOC entry 2900 (class 0 OID 0)
+-- Dependencies: 169
 -- Name: COLUMN country.countryiso3; Type: COMMENT; Schema: bayo; Owner: postgres
 --
 
@@ -120,6 +133,7 @@ COMMENT ON COLUMN country.countryiso3 IS '
 
 
 --
+-- TOC entry 171 (class 1259 OID 16398)
 -- Name: departament; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -135,6 +149,7 @@ CREATE TABLE departament (
 ALTER TABLE departament OWNER TO postgres;
 
 --
+-- TOC entry 170 (class 1259 OID 16396)
 -- Name: departament_departamentid_seq; Type: SEQUENCE; Schema: bayo; Owner: postgres
 --
 
@@ -149,6 +164,8 @@ CREATE SEQUENCE departament_departamentid_seq
 ALTER TABLE departament_departamentid_seq OWNER TO postgres;
 
 --
+-- TOC entry 2901 (class 0 OID 0)
+-- Dependencies: 170
 -- Name: departament_departamentid_seq; Type: SEQUENCE OWNED BY; Schema: bayo; Owner: postgres
 --
 
@@ -156,6 +173,7 @@ ALTER SEQUENCE departament_departamentid_seq OWNED BY departament.departamentid;
 
 
 --
+-- TOC entry 178 (class 1259 OID 16446)
 -- Name: level; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -166,6 +184,7 @@ CREATE TABLE level (
 ALTER TABLE level OWNER TO postgres;
 
 --
+-- TOC entry 175 (class 1259 OID 16414)
 -- Name: neighborhood; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -181,6 +200,7 @@ CREATE TABLE neighborhood (
 ALTER TABLE neighborhood OWNER TO postgres;
 
 --
+-- TOC entry 174 (class 1259 OID 16412)
 -- Name: neighborhood_neighborhoodid_seq; Type: SEQUENCE; Schema: bayo; Owner: postgres
 --
 
@@ -195,6 +215,8 @@ CREATE SEQUENCE neighborhood_neighborhoodid_seq
 ALTER TABLE neighborhood_neighborhoodid_seq OWNER TO postgres;
 
 --
+-- TOC entry 2902 (class 0 OID 0)
+-- Dependencies: 174
 -- Name: neighborhood_neighborhoodid_seq; Type: SEQUENCE OWNED BY; Schema: bayo; Owner: postgres
 --
 
@@ -202,6 +224,7 @@ ALTER SEQUENCE neighborhood_neighborhoodid_seq OWNED BY neighborhood.neighborhoo
 
 
 --
+-- TOC entry 177 (class 1259 OID 16443)
 -- Name: supplier; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -212,6 +235,7 @@ CREATE TABLE supplier (
 ALTER TABLE supplier OWNER TO postgres;
 
 --
+-- TOC entry 179 (class 1259 OID 16452)
 -- Name: users; Type: TABLE; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -222,6 +246,7 @@ CREATE TABLE users (
 ALTER TABLE users OWNER TO postgres;
 
 --
+-- TOC entry 2765 (class 2604 OID 16409)
 -- Name: cityid; Type: DEFAULT; Schema: bayo; Owner: postgres
 --
 
@@ -229,6 +254,7 @@ ALTER TABLE ONLY city ALTER COLUMN cityid SET DEFAULT nextval('city_cityid_seq':
 
 
 --
+-- TOC entry 2764 (class 2604 OID 16401)
 -- Name: departamentid; Type: DEFAULT; Schema: bayo; Owner: postgres
 --
 
@@ -236,6 +262,7 @@ ALTER TABLE ONLY departament ALTER COLUMN departamentid SET DEFAULT nextval('dep
 
 
 --
+-- TOC entry 2766 (class 2604 OID 16417)
 -- Name: neighborhoodid; Type: DEFAULT; Schema: bayo; Owner: postgres
 --
 
@@ -243,21 +270,32 @@ ALTER TABLE ONLY neighborhood ALTER COLUMN neighborhoodid SET DEFAULT nextval('n
 
 
 --
+-- TOC entry 2888 (class 0 OID 16406)
+-- Dependencies: 173
 -- Data for Name: city; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
 COPY city (cityid, departamentid, cityname, citycreated, cityupdated) FROM stdin;
+1	1	Ciudad del Este	2015-01-24 15:41:19	2015-01-24 15:41:22
+3	1	Presidente Franco	2015-01-24 15:41:33	2015-01-24 15:41:33
+4	1	Minga Guazu	2015-01-24 15:41:33	2015-01-24 15:41:33
+5	4	Encarnacion	2015-01-24 15:41:33	2015-01-24 15:41:33
+6	4	Coronel Bogado	2015-01-24 15:41:33	2015-01-24 15:41:33
 \.
 
 
 --
+-- TOC entry 2903 (class 0 OID 0)
+-- Dependencies: 172
 -- Name: city_cityid_seq; Type: SEQUENCE SET; Schema: bayo; Owner: postgres
 --
 
-SELECT pg_catalog.setval('city_cityid_seq', 1, false);
+SELECT pg_catalog.setval('city_cityid_seq', 6, true);
 
 
 --
+-- TOC entry 2891 (class 0 OID 16440)
+-- Dependencies: 176
 -- Data for Name: client; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
@@ -266,6 +304,8 @@ COPY client  FROM stdin;
 
 
 --
+-- TOC entry 2884 (class 0 OID 16388)
+-- Dependencies: 169
 -- Data for Name: country; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
@@ -514,21 +554,31 @@ COPY country (countryid, countryname, countryiso2, countryiso3, countryflag, cou
 
 
 --
+-- TOC entry 2886 (class 0 OID 16398)
+-- Dependencies: 171
 -- Data for Name: departament; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
 COPY departament (departamentid, departamentname, departamentcreated, departamentupdated, countryid) FROM stdin;
+1	Alto Parana	2015-01-24 15:05:54	2015-01-24 15:05:57	197
+4	Itapua	2015-01-24 15:37:58	2015-01-24 15:38:01	172
+5	Central	2015-01-24 15:38:26	2015-01-24 15:38:29	172
+2	Guaira	2015-01-24 15:37:02	2015-01-24 15:37:05	172
 \.
 
 
 --
+-- TOC entry 2904 (class 0 OID 0)
+-- Dependencies: 170
 -- Name: departament_departamentid_seq; Type: SEQUENCE SET; Schema: bayo; Owner: postgres
 --
 
-SELECT pg_catalog.setval('departament_departamentid_seq', 1, false);
+SELECT pg_catalog.setval('departament_departamentid_seq', 5, true);
 
 
 --
+-- TOC entry 2893 (class 0 OID 16446)
+-- Dependencies: 178
 -- Data for Name: level; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
@@ -537,21 +587,30 @@ COPY level  FROM stdin;
 
 
 --
+-- TOC entry 2890 (class 0 OID 16414)
+-- Dependencies: 175
 -- Data for Name: neighborhood; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
 COPY neighborhood (neighborhoodid, cityid, neighborhoodname, neighborhoodcreated, neighborhoodupdated) FROM stdin;
+1	1	Obrero	2015-01-24 15:41:33	2015-01-24 15:41:33
+4	1	Boqueron	2015-01-24 15:41:33	2015-01-24 15:41:33
+6	1	San Roque	2015-01-24 15:41:33	2015-01-24 15:41:33
 \.
 
 
 --
+-- TOC entry 2905 (class 0 OID 0)
+-- Dependencies: 174
 -- Name: neighborhood_neighborhoodid_seq; Type: SEQUENCE SET; Schema: bayo; Owner: postgres
 --
 
-SELECT pg_catalog.setval('neighborhood_neighborhoodid_seq', 1, false);
+SELECT pg_catalog.setval('neighborhood_neighborhoodid_seq', 6, true);
 
 
 --
+-- TOC entry 2892 (class 0 OID 16443)
+-- Dependencies: 177
 -- Data for Name: supplier; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
@@ -560,6 +619,8 @@ COPY supplier  FROM stdin;
 
 
 --
+-- TOC entry 2894 (class 0 OID 16452)
+-- Dependencies: 179
 -- Data for Name: users; Type: TABLE DATA; Schema: bayo; Owner: postgres
 --
 
@@ -568,6 +629,7 @@ COPY users  FROM stdin;
 
 
 --
+-- TOC entry 2772 (class 2606 OID 16411)
 -- Name: city_pkey; Type: CONSTRAINT; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -576,6 +638,7 @@ ALTER TABLE ONLY city
 
 
 --
+-- TOC entry 2768 (class 2606 OID 16395)
 -- Name: country_pkey; Type: CONSTRAINT; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -584,6 +647,7 @@ ALTER TABLE ONLY country
 
 
 --
+-- TOC entry 2770 (class 2606 OID 16403)
 -- Name: departament_pkey; Type: CONSTRAINT; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -592,6 +656,7 @@ ALTER TABLE ONLY departament
 
 
 --
+-- TOC entry 2774 (class 2606 OID 16419)
 -- Name: neighborhood_pkey; Type: CONSTRAINT; Schema: bayo; Owner: postgres; Tablespace: 
 --
 
@@ -600,6 +665,7 @@ ALTER TABLE ONLY neighborhood
 
 
 --
+-- TOC entry 2776 (class 2606 OID 16435)
 -- Name: city_departamentid_fkey; Type: FK CONSTRAINT; Schema: bayo; Owner: postgres
 --
 
@@ -608,6 +674,7 @@ ALTER TABLE ONLY city
 
 
 --
+-- TOC entry 2775 (class 2606 OID 16430)
 -- Name: departament_countryid_fkey; Type: FK CONSTRAINT; Schema: bayo; Owner: postgres
 --
 
@@ -616,12 +683,15 @@ ALTER TABLE ONLY departament
 
 
 --
+-- TOC entry 2777 (class 2606 OID 16425)
 -- Name: neighborhood_cityid_fkey; Type: FK CONSTRAINT; Schema: bayo; Owner: postgres
 --
 
 ALTER TABLE ONLY neighborhood
     ADD CONSTRAINT neighborhood_cityid_fkey FOREIGN KEY (cityid) REFERENCES city(cityid) ON UPDATE CASCADE ON DELETE RESTRICT;
 
+
+-- Completed on 2015-01-24 16:56:53
 
 --
 -- PostgreSQL database dump complete

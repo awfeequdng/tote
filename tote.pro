@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     image.cpp \
     citymodel.cpp \
     departamentmodel.cpp \
-    neighborhoodmodel.cpp
+    neighborhoodmodel.cpp \
+    geographymodel.cpp
 
 HEADERS  += tote.h \
     brand.h \
@@ -41,7 +42,8 @@ HEADERS  += tote.h \
     image.h \
     citymodel.h \
     departamentmodel.h \
-    neighborhoodmodel.h
+    neighborhoodmodel.h \
+    geographymodel.h
 
 FORMS    += tote.ui \
     brand.ui \
