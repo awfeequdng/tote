@@ -2,10 +2,6 @@
 #define GEOGRAPHY_H
 
 #include <QDialog>
-#include <QItemDelegate>
-
-#include "countrymodel.h"
-#include "geographymodel.h"
 
 namespace Ui {
 class Geography;
@@ -21,9 +17,6 @@ public:
 
 private:
     Ui::Geography *ui;
-
-    CountryModel *_countryMod;
-    GeographyModel *_geographyMod;
 };
 
 #endif // GEOGRAPHY_H
