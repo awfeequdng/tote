@@ -51,5 +51,4 @@ FORMS    += tote.ui \
     geography.ui \
     geography.ui
 
-RESOURCES += \
-    rsctote.qrc
+RESOURCES +=
