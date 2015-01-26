@@ -18,7 +18,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>841</width>
+     <width>1011</width>
      <height>681</height>
     </rect>
    </property>
@@ -34,7 +34,7 @@
       <rect>
        <x>0</x>
        <y>70</y>
-       <width>521</width>
+       <width>471</width>
        <height>501</height>
       </rect>
      </property>
@@ -81,10 +81,238 @@
       <rect>
        <x>0</x>
        <y>10</y>
-       <width>831</width>
+       <width>711</width>
        <height>501</height>
       </rect>
      </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>10</y>
+       <width>251</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Departamento</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>231</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="flDepartament">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Pais:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Departamento I.D.:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Departamento:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Creado :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Modificado:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="leCountryId"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leDepartamentId"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leDepartamentName"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDateTimeEdit" name="dtDepartamentUpdated"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDateTimeEdit" name="dtDepartamentCreated"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>220</y>
+       <width>281</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Ciudad</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>231</width>
+        <height>126</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="flCity">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Departamento</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>Ciudad I.D.:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Ciudad:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Creado:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Modificado</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_6"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leCityId"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leCityName"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDateTimeEdit" name="dtCityCreated"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDateTimeEdit" name="dtCityUpdated"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>410</y>
+       <width>271</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Barrio</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>231</width>
+        <height>126</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="lfNeighborhood">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Ciudad:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Barrio I.D.:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Barrio:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>Creado:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Modificado:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="le"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="leNeighborhoodId"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="leNeighborhoodName"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDateTimeEdit" name="dtNeighborhoodCreated"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDateTimeEdit" name="dtNeighborhoodUpdated"/>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </widget>
   </widget>

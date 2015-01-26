@@ -4,11 +4,12 @@
 #include <QDialog>
 #include <QItemDelegate>
 #include <QDebug>
-// teste
 #include <QSortFilterProxyModel>
+#include <QDataWidgetMapper>
 
 #include "countrymodel.h"
 #include "geographymodel.h"
+#include "citymodel.h"
 
 namespace Ui {
 class Geography;
@@ -27,6 +28,8 @@ private slots:
 
     void on_leCountryIdF_textEdited(const QString &arg1);
 
+    void on_tvGeography_clicked(const QModelIndex &index);
+
 private:
     Ui::Geography *ui;
 
@@ -34,6 +37,10 @@ private:
     GeographyModel *_geographyMod;
     QSortFilterProxyModel *_countryProxy;
     QSortFilterProxyModel *_geographyProxy;
+    QDataWidgetMapper *_cityMapper;
+    CityModel *_cityModel;
+
+    void createConnections();
 };
 
 #endif // GEOGRAPHY_H

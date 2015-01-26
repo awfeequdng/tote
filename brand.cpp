@@ -1,12 +1,6 @@
 #include "brand.h"
 #include "ui_brand.h"
 
-
-#include <QDebug>
-#include <QMessageBox>
-#include <QRegExpValidator>
-
-
 Brand::Brand(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Brand)
@@ -18,10 +12,6 @@ Brand::Brand(QWidget *parent) :
     _brandModel = new BrandModel(this);
     _mapper = new QDataWidgetMapper(this);
     _mode = DBConn::combinedMode;
-
-    //_brandModel->removeColumn(_brandModel->fieldIndex("brandupdated"));
-    //_brandModel->removeColumn(_brandModel->fieldIndex("brandcreated"));
-
 
     _brandModel->select();
 

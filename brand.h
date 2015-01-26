@@ -8,6 +8,9 @@
 #include <QDialog>
 #include <QDataWidgetMapper>
 #include <QLineEdit>
+#include <QDebug>
+#include <QMessageBox>
+#include <QRegExpValidator>
 
 namespace Ui {
 class Brand;

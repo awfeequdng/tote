@@ -11,7 +11,9 @@ GeographyModel::GeographyModel(QObject *parent) :
     setHeaderData(fieldIndex("countryname"), Qt::Horizontal, tr("Pais"));
     setHeaderData(fieldIndex("departamentid"), Qt::Horizontal, tr("Depart.ID"));
     setHeaderData(fieldIndex("departamentname"), Qt::Horizontal, tr("Departamento"));
+    setHeaderData(fieldIndex("cityid"), Qt::Horizontal, tr("Ciudad.ID"));
     setHeaderData(fieldIndex("cityname"), Qt::Horizontal, tr("Ciudad"));
+    setHeaderData(fieldIndex("neighborhoodid"), Qt::Horizontal, tr("Barrio.ID"));
     setHeaderData(fieldIndex("neighborhoodname"), Qt::Horizontal, tr("Barrio"));
 }
 

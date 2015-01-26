@@ -15,6 +15,27 @@ Geography::Geography(QWidget *parent) :
     _geographyMod = new GeographyModel(this);
     _countryProxy = new QSortFilterProxyModel(this) ;
     _geographyProxy = new QSortFilterProxyModel(this);
+    _cityMapper = new QDataWidgetMapper(this);
+    _cityModel = new CityModel(this);
+
+//  Configure the mapper
+    _cityMapper->setModel(_geographyProxy);
+    _cityMapper->setSubmitPolicy(QDataWidgetMapper::ManualSubmit);
+    _cityMapper->addMapping(ui->leDepartamentId, _geographyMod->fieldIndex("departamentid") );
+    _cityMapper->addMapping(ui->leDepartamentName, _geographyMod->fieldIndex("departamentname") );
+    _cityMapper->addMapping(ui->dtDepartamentCreated, _geographyMod->fieldIndex("departamentcreated") );
+    _cityMapper->addMapping(ui->dtDepartamentUpdated, _geographyMod->fieldIndex("departamentupdated") );
+    _cityMapper->addMapping(ui->leCityId, _geographyMod->fieldIndex("cityid"));
+    _cityMapper->addMapping(ui->leCityName, _geographyMod->fieldIndex("cityname"));
+    _cityMapper->addMapping(ui->dtCityCreated, _geographyMod->fieldIndex("citycreated"));
+    _cityMapper->addMapping(ui->dtCityUpdated, _geographyMod->fieldIndex("cityupdated"));
+    _cityMapper->addMapping(ui->leNeighborhoodId, _geographyMod->fieldIndex("neighborhoodid"));
+    _cityMapper->addMapping(ui->leNeighborhoodName, _geographyMod->fieldIndex("neighborhoodname"));
+    _cityMapper->addMapping(ui->dtNeighborhoodCreated, _geographyMod->fieldIndex("neighborhoodupdate"));
+    _cityMapper->addMapping(ui->dtNeighborhoodUpdated, _geographyMod->fieldIndex("neighborhoodupdated"));
+    _cityMapper->toFirst();
+
+
 
 //  Remove column unnecessary from country table
     _countryMod->removeColumn(_countryMod->fieldIndex("countryupdated"));
@@ -45,9 +66,13 @@ Geography::Geography(QWidget *parent) :
     ui->tvGeography->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->tvGeography->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->tvGeography->setColumnHidden(_geographyMod->fieldIndex("departamentid"), true);
+    ui->tvGeography->setColumnHidden(_geographyMod->fieldIndex("cityid"), true);
+    ui->tvGeography->setColumnHidden(_geographyMod->fieldIndex("neighborhoodid"), true);
 //    ui->tvGeography->setSortingEnabled(true);
     ui->tvGeography->resizeColumnsToContents();
     ui->tvGeography->horizontalHeader()->setStretchLastSection(true);
+
+    createConnections();
 
 }
 
@@ -65,9 +90,12 @@ void Geography::on_leCountryIdF_textEdited(const QString &arg1)
     _countryProxy->setFilterRegExp(arg1);
 }
 
-
-
 Geography::~Geography()
 {
     delete ui;
+}
+
+void Geography::createConnections()
+{
+    connect(ui->tvGeography, SIGNAL(clicked(QModelIndex)), _cityMapper, SLOT(setCurrentModelIndex(QModelIndex)));
 }
