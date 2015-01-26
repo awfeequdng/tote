@@ -4,8 +4,6 @@
 #include <QMainWindow>
 
 #include "geography.h"
-#include "image.h"
-
 
 namespace Ui {
 class tote;
