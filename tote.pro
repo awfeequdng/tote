@@ -22,7 +22,6 @@ SOURCES += main.cpp\
     utils.cpp \
     login.cpp \
     countrymodel.cpp \
-    image.cpp \
     citymodel.cpp \
     departamentmodel.cpp \
     neighborhoodmodel.cpp \
@@ -38,7 +37,6 @@ HEADERS  += tote.h \
     utils.h \
     login.h \
     countrymodel.h \
-    image.h \
     citymodel.h \
     departamentmodel.h \
     neighborhoodmodel.h \
@@ -50,7 +48,6 @@ FORMS    += tote.ui \
     user.ui \
     client.ui \
     login.ui \
-    image.ui \
     geography.ui \
     geography.ui
 

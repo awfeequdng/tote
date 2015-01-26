@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>130</y>
-     <width>1091</width>
-     <height>541</height>
+     <y>10</y>
+     <width>841</width>
+     <height>681</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -33,11 +33,43 @@
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>0</y>
-       <width>1071</width>
+       <y>70</y>
+       <width>521</width>
        <height>501</height>
       </rect>
      </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>186</width>
+       <height>48</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Pais I.D.:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="leCountryIdF"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Pais:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="leCountryNameF"/>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
@@ -49,7 +81,7 @@
       <rect>
        <x>0</x>
        <y>10</y>
-       <width>1061</width>
+       <width>831</width>
        <height>501</height>
       </rect>
      </property>
