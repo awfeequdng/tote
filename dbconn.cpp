@@ -1,5 +1,6 @@
 #include "dbconn.h"
 
+
 QSqlDatabase DBConn::_db = QSqlDatabase::addDatabase("QPSQL");
 DBConn *DBConn::_obj = new DBConn;
 int DBConn::insertMode = 0;
@@ -18,13 +19,11 @@ int DBConn::combinedMode = 4;
 DBConn::DBConn(QObject *parent) :
     QObject(parent)
 {
-    //_db.setHostName("localhost");
-    _db.setHostName("192.168.1.254");
-    _db.setUserName("postgres");
-    _db.setPassword("120.125");
-    _db.setPort(5432);
-    _db.setDatabaseName("tote");
-
+//    _db.setHostName("192.168.1.254");
+//    _db.setUserName("postgres");
+//    _db.setPassword("120.125");
+//    _db.setPort(5432);
+//    _db.setDatabaseName("tote");
 }
 
 
@@ -54,4 +53,13 @@ bool DBConn::openConnection()
     }
 
     return true;
+}
+
+void DBConn::setParams(const QString dbHost, const int dbPort, const QString dbUser, const QString dbPass, const QString dbName)
+{
+    _db.setHostName(dbHost);
+    _db.setUserName(dbUser);
+    _db.setPassword(dbPass);
+    _db.setPort(dbPort);
+    _db.setDatabaseName(dbName);
 }

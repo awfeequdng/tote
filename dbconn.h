@@ -22,8 +22,7 @@ public:
     static int updateMode;
     static int deleteMode;
     static int combinedMode;
-
-
+    static void setParams(const QString dbHost, const int dbPort, const QString dbUser, const QString dbPass, const QString dbName);
 };
 
 #endif // DBCONN_H
