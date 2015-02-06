@@ -39,16 +39,11 @@ int main(int argc, char *argv[])
         if (fileMessage == QMessageBox::Yes) {
             qDebug() << "YES";
             settings->beginGroup("db");
-//            settings->setValue("dbHost", "localhost");
-//            settings->setValue("dbPort", 5432);
-//            settings->setValue("dbUser", "postgres");
-//            settings->setValue("dbPass", "120.125");
-//            settings->setValue("dbName", "tote");
-            settings->setValue("dbHost", QString("localhost"));
-            settings->setValue("dbPort", int(5432));
-            settings->setValue("dbUser", QString("postgres"));
-            settings->setValue("dbPass", QString("120.125"));
-            settings->setValue("dbName", QString("tote"));
+            settings->setValue("dbHost", "192.168.28.12");
+            settings->setValue("dbPort", 5432);
+            settings->setValue("dbUser", "postgres");
+            settings->setValue("dbPass", "120.125");
+            settings->setValue("dbName", "tote");
             settings->endGroup();
 
         } else {

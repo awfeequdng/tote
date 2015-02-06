@@ -10,6 +10,8 @@ Geography::Geography(QWidget *parent) :
 
     setWindowTitle(tr("Geografia"));
 
+    qDebug() << GLOBALS::INS;
+
 //  Create objects
     _countryMod = new CountryModel(this);
     _geographyMod = new GeographyModel(this);
@@ -71,9 +73,6 @@ Geography::Geography(QWidget *parent) :
 //    ui->tvGeography->setSortingEnabled(true);
     ui->tvGeography->resizeColumnsToContents();
     ui->tvGeography->horizontalHeader()->setStretchLastSection(true);
-
-    createConnections();
-
 }
 
 void Geography::on_leCountryNameF_textEdited(const QString &arg1)
@@ -95,7 +94,14 @@ Geography::~Geography()
     delete ui;
 }
 
-void Geography::createConnections()
+void Geography::on_tvGeography_clicked(const QModelIndex &index)
 {
-    connect(ui->tvGeography, SIGNAL(clicked(QModelIndex)), _cityMapper, SLOT(setCurrentModelIndex(QModelIndex)));
+        _cityMapper->setCurrentModelIndex(index);
+}
+
+void Geography::on_btnAddDepartament_clicked()
+{
+    _Form = new DepartamentForm(this, 0);
+
+    _Form->show();
 }

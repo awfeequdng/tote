@@ -6,10 +6,12 @@
 #include <QDebug>
 #include <QSortFilterProxyModel>
 #include <QDataWidgetMapper>
+#include "globals.h"
 
 #include "countrymodel.h"
 #include "geographymodel.h"
 #include "citymodel.h"
+#include "departamentform.h"
 
 namespace Ui {
 class Geography;
@@ -30,6 +32,8 @@ private slots:
 
     void on_tvGeography_clicked(const QModelIndex &index);
 
+    void on_btnAddDepartament_clicked();
+
 private:
     Ui::Geography *ui;
 
@@ -39,8 +43,7 @@ private:
     QSortFilterProxyModel *_geographyProxy;
     QDataWidgetMapper *_cityMapper;
     CityModel *_cityModel;
-
-    void createConnections();
+    DepartamentForm *_Form;
 };
 
 #endif // GEOGRAPHY_H

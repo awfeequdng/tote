@@ -3,6 +3,18 @@
 
 #include <QObject>
 #include <QSqlRelationalTableModel>
+#include <QDateTime>
+#include <QString>
+#include <QDebug>
+#include <QSqlError>
+
+struct SDepartament{
+    int id;
+    int countryId;
+    QString name;
+    QDateTime created;
+    QDateTime updated;
+};
 
 class DepartamentModel : public QSqlRelationalTableModel
 {
@@ -11,6 +23,7 @@ class DepartamentModel : public QSqlRelationalTableModel
 public:
     explicit DepartamentModel(QObject *parent =0);
     ~DepartamentModel();
+    bool insert(SDepartament);
 };
 
 #endif // DEPARTAMENTMODEL_H

@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     departamentmodel.cpp \
     neighborhoodmodel.cpp \
     geographymodel.cpp \
-    geography.cpp
+    geography.cpp \
+    departamentform.cpp
 
 HEADERS  += tote.h \
     brand.h \
@@ -41,7 +42,9 @@ HEADERS  += tote.h \
     departamentmodel.h \
     neighborhoodmodel.h \
     geographymodel.h \
-    geography.h
+    geography.h \
+    departamentform.h \
+    globals.h
 
 FORMS    += tote.ui \
     brand.ui \
@@ -49,6 +52,7 @@ FORMS    += tote.ui \
     client.ui \
     login.ui \
     geography.ui \
-    geography.ui
+    geography.ui \
+    departamentform.ui
 
 RESOURCES +=
